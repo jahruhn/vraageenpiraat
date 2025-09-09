@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vraag een Piraat! | Ask a Pirate | Piratenpartij Search</title>
+  <meta name="description" content="Stel je vragen aan de Piratenpartij en vind snel antwoorden over privacy, standpunten en meer. Zoek in wiki.piratenpartij.nl, piratenpartij.nl en pp-international.net.">
+  <meta name="keywords" content="Piratenpartij, privacy, politiek, vraag, search, wiki, pp-international, ask a pirate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ubuntu">
+  <style>
+    body {
+      font-family: 'Ubuntu', Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+    }
+    .search-container {
+      border: 1px solid #800080;
+      border-radius: 8px;
+      background-color: #ffffff;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(128,0,128,0.08);
+    }
+    h1, h3 {
+      color: #800080;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 8px;
+      margin-right: 10px;
+      border: 1px solid #800080;
+      border-radius: 4px;
+      background-color: #f3e6fa;
+      color: #4B006E;
+      font-family: 'Ubuntu', Arial, sans-serif;
+    }
+    input[type="submit"] {
+      padding: 8px 16px;
+      background-color: #800080;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      font-family: 'Ubuntu', Arial, sans-serif;
+    }
+    input[type="submit"]:hover {
+      background-color: #4B006E;
+    }
+    .instructions {
+      font-size: 13px;
+      margin-top: 15px;
+      font-family: 'Ubuntu', Arial, sans-serif;
+    }
+    .instructions a {
+      color: #800080;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="search-container">
+      <h1>Vraag een Piraat / Ask a Pirate</h1>
+      <h3>🔍 Zoek in Piratenpartij bronnen</h3>
+      <form method="get" action="https://duckduckgo.com/" target="_blank">
+        <input type="text" name="q" placeholder="Vraag een piraat / ask a pirate" aria-label="Zoekvraag" />
+        <input type="hidden" name="sites" value="site:https://wiki.piratenpartij.nl OR site:https://piratenpartij.nl OR site:https://pp-international.net/" />
+        <input type="hidden" name="kl" value="uk-en" />
+        <input type="hidden" name="kac" value="1" />
+        <input type="hidden" name="kn" value="1" />
+        <input type="hidden" name="kg" value="g" />
+        <input type="hidden" name="kz" value="1" />
+        <input type="hidden" name="kp" value="-1" />
+        <input type="hidden" name="kc" value="1" />
+        <input type="hidden" name="kav" value="1" />
+        <input type="submit" value="Search" />
+      </form>
+      <div class="instructions">
+        💡 <strong>Tip:</strong> Stel je vragen aan de Piratenpartij, bijvoorbeeld: “Wat zijn de standpunten van de piratenpartij op het gebied van privacy?”<br>
+        🧠 Search Assist zal dit samenvatten middels AI (Mistral powered) met behulp van deze bronnen: 
+        <a href="https://wiki.piratenpartij.nl" target="_blank">wiki.piratenpartij.nl</a>, 
+        <a href="https://piratenpartij.nl" target="_blank">piratenpartij.nl</a>, 
+        <a href="https://pp-international.net/" target="_blank">pp-international.net</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
