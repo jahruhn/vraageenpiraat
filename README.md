@@ -1,4 +1,4 @@
-# Vraag een Piraat! / Ask a Pirate
+# Vraag een Piraat! / Ask a Pirate!
 
 A simple, SEO-optimized search page for the Piratenpartij, allowing users to ask questions and search trusted sources using DuckDuckGo.
 
